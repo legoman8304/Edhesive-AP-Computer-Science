@@ -1,4 +1,4 @@
-Dunwoody Computer Science Solutions
+Edhesive AP Computer Science
 ===================================
 
 These are a collection of solutions to assignments the students have
