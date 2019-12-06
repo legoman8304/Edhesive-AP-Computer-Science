@@ -39,36 +39,43 @@ import java.util.Scanner;
  */
 
 @SuppressWarnings("ALL")
-class Lesson_14_Activity_3 {
-    public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
-            System.out.println("Please enter the first octet: ");
-            int octet1 = scanner.nextInt();
-            System.out.println("Please enter the second octet: ");
-            int octet2 = scanner.nextInt();
-            System.out.println("Please enter the third octet: ");
-            int octet3 = scanner.nextInt();
-            System.out.println("Please enter the fourth octet: ");
-            int octet4 = scanner.nextInt();
-            if (0 > octet1 || octet1 > 255) {
-                System.out.println("Octet 1 is incorrect.");
-            }
-            if (0 > octet2 || octet2 > 255) {
-                System.out.println("Octet 2 is incorrect.");
-            }
-            if (0 > octet3 || octet3 > 255) {
-                System.out.println("Octet 3 is incorrect.");
-            }
-            if (0 > octet4 || octet4 > 255) {
-                System.out.println("Octet 4 is incorrect.");
-            }
 
-            if (0 <= octet1 && octet1 <= 255 &&
-                0 <= octet2 && octet2 <= 255 &&
-                0 <= octet3 && octet3 <= 255 &&
-                0 <= octet4 && octet4 <= 255) {
-                System.out.println("IP Address: " + octet1 + '.' + octet2 + '.' + octet3 + '.' + octet4);
-            }
-        }
+class Lesson_14_Activity_3{
+    public static void main(String[] args)
+     {
+      Scanner scan = new Scanner(System.in);
+      
+      System.out.println("Please enter the first octet:");
+      int a = scan.nextInt();
+      System.out.println("Please enter the second octet:");
+      int b = scan.nextInt();
+      System.out.println("Please enter the third octet:");
+      int c = scan.nextInt();
+      System.out.println("Please enter the fourth octet:");
+      int d = scan.nextInt();
+      
+      if (a>=0 && a<=255)
+      a=a;
+        else
+        System.out.println("Octet 1 is incorrect");
+      if (b>=0 && b<=255)
+      b=b;
+        else
+        System.out.println("Octet 2 is incorrect");
+      if (c>=0 && c<=255)
+      c=c;
+        else
+        System.out.println("Octet 3 is incorrect");
+      if (d>=0 && d<=255)
+      d=d;
+        else
+        System.out.println("Octet 4 is incorrect");
+          if (d>=0 && d<=255 && c>=0 && c<=255 && b>=0 && b<=255 && a>=0 && a<=255)
+          System.out.println("IP Address: " + a + "." + b + "." + c + "." + d);
+     
+     
+     
+     
+     
     }
 }
